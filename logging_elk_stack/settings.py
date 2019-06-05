@@ -176,12 +176,12 @@ LOGGING = {
   },
   'handlers': {
         'console': {
-            #'level': 'INFO',
+            'level': 'INFO',
             'class': 'logging.StreamHandler',
             'formatter': 'console'
         },
         'logstash': {
-            'level': 'WARNING',
+            #'level': 'WARNING',
             'class': 'logstash.TCPLogstashHandler',
             'host': 'localhost',
             'port': 5959, # Default value: 5959
@@ -191,7 +191,7 @@ LOGGING = {
             'tags': ['django.request'], # list of tags. Default: None.
         },
      'file': {
-                #'level': 'DEBUG',
+                'level': 'DEBUG',
                 'class': 'logging.FileHandler',
                 'formatter': 'file',
                 'filename': 'debug.log'
@@ -199,14 +199,14 @@ LOGGING = {
   },
   'loggers': {
         'django.request': {
-            'handlers': ['logstash'],
             'level': 'WARNING',
+            'handlers': ['logstash'],
             'propagate': True,
         },
-        'django': {
-            #'level': 'DEBUG',
-            'handlers': ['console','file'],
-            'propagate': True,
-        },
+        # '': {
+        #     'level': 'DEBUG',
+        #     'handlers': ['console','file'],
+        #     'propagate': True,
+        # },
     }
 }

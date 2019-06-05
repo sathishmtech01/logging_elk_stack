@@ -1,0 +1,63 @@
+2019-06-05 13:13:12,012 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 13:21:26,854 django.server INFO     "POST /sample HTTP/1.1" 200 15
+2019-06-05 14:02:08,993 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
+2019-06-05 14:02:11,321 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 14:02:23,060 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
+2019-06-05 14:02:23,501 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 14:02:23,540 logging_app.views INFO     Checking the status
+2019-06-05 14:02:29,229 logging_app.views INFO     info-inside sample views
+2019-06-05 14:02:29,229 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:02:29,229 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:02:29,229 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:31:52,551 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
+2019-06-05 14:31:53,121 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 14:31:53,157 logging_app.views INFO     Checking the status
+2019-06-05 14:31:59,353 logging_app.views INFO     info-inside sample views
+2019-06-05 14:31:59,353 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:31:59,353 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:31:59,354 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:33:53,614 logging_app.views INFO     info-inside sample views
+2019-06-05 14:33:53,614 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:33:53,614 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:33:53,614 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:33:53,898 logging_app.views INFO     info-inside sample views
+2019-06-05 14:33:53,900 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:33:53,900 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:33:53,900 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:33:54,202 logging_app.views INFO     info-inside sample views
+2019-06-05 14:33:54,202 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:33:54,202 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:33:54,202 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:33:54,454 logging_app.views INFO     info-inside sample views
+2019-06-05 14:33:54,454 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:33:54,455 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:33:54,457 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:33:54,781 logging_app.views INFO     info-inside sample views
+2019-06-05 14:33:54,781 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:33:54,781 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:33:54,781 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:40:11,761 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
+2019-06-05 14:40:12,277 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 14:40:12,311 logging_app.views INFO     Checking the status
+2019-06-05 14:40:26,958 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
+2019-06-05 14:40:27,361 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 14:40:27,400 logging_app.views INFO     Checking the status
+2019-06-05 14:40:38,959 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
+2019-06-05 14:40:39,361 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 14:40:39,399 logging_app.views INFO     Checking the status
+2019-06-05 14:40:43,861 logging_app.views INFO     info-inside sample views
+2019-06-05 14:40:43,861 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:40:43,861 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:40:43,861 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:40:44,508 logging_app.views INFO     info-inside sample views
+2019-06-05 14:40:44,509 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:40:44,509 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:40:44,509 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:41:14,978 logging_app.views INFO     info-inside sample views
+2019-06-05 14:41:14,978 logging_app.views DEBUG    debug-inside sample views
+2019-06-05 14:41:14,978 logging_app.views ERROR    error-inside sample views
+2019-06-05 14:41:14,978 logging_app.views WARNING  warning-inside sample views
+2019-06-05 14:41:48,031 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
+2019-06-05 14:41:48,443 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 14:41:48,476 logging_app.views INFO     Checking the status
+2019-06-05 14:42:04,183 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
