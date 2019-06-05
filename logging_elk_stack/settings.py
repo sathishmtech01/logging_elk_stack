@@ -193,7 +193,7 @@ LOGGING = {
                 'filename': 'debug.log'
             }
     },
-    'loggers': {
+    'loggers': { #TODO : Why django.request is not working 'django.request': {'handlers': ['logstash','file'],'level': 'ERROR','propagate': True,}
         '': {
             'handlers': ['logstash','file'],
             'level': 'ERROR',
