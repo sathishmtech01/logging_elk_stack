@@ -29,3 +29,42 @@
     Django version 2.2.2, using settings 'logging_elk_stack.settings'
     Starting development server at http://127.0.0.1:8000/
     Quit the server with CONTROL-C
+    
+#### Setting up
+    blog:
+    https://www.freecodecamp.org/news/how-to-use-elasticsearch-logstash-and-kibana-to-visualise-logs-in-python-in-realtime-acaab281c9de/
+    https://www.codementor.io/samueljames/using-django-with-elasticsearch-logstash-and-kibana-elk-stack-9l4fwx138
+ 
+    Download:
+        - elastic search - https://www.elastic.co/downloads/elasticsearch
+        - kibana - https://www.elastic.co/downloads/logstash
+        - logstash - https://www.elastic.co/downloads/kibana
+        
+    Extract : tar file of the above downloads
+        - csk@csk-ai-revolution:~/elk$ tar -xvf logstash-7.1.1.tar.gz
+        - similarly for other 
+    
+    Run :
+    Kibana - csk@csk-ai-revolution:~/elk/kibana$ ./bin/kibana
+    Elastic search - csk@csk-ai-revolution:~/elk/elasticsearch$ ./bin/elasticsearch 
+    logstacsh - 
+    csk@csk-ai-revolution:~/elk/logstash$ nano logstash-simple.conf
+    
+    input {
+    tcp {
+    port => 5959
+    codec => json
+    }
+    }
+    output {
+      elasticsearch {
+        hosts => ["localhost:9200"]
+      }
+    }
+    
+    csk@csk-ai-revolution:~/elk/logstash$ ./bin/logstash -f logstash-simple.conf
+    
+    Python Library:
+    (elk) csk@csk-ai-revolution:~/PycharmProjects/git/logging_elk_stack$ pip install python-logstash
+    (elk) csk@csk-ai-revolution:~/PycharmProjects/git/logging_elk_stack$ pip install django-elasticsearch-dsl
+   
