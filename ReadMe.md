@@ -68,3 +68,24 @@
     (elk) csk@csk-ai-revolution:~/PycharmProjects/git/logging_elk_stack$ pip install python-logstash
     (elk) csk@csk-ai-revolution:~/PycharmProjects/git/logging_elk_stack$ pip install django-elasticsearch-dsl
    
+
+
+### Screen Shot
+
+#### Kibana in terminal
+![alt text](images/kibana_terminal.png)
+#### Elastic search in terminal
+![alt text](images/elastic_terminal.png)
+#### Logstash in terminal
+![alt text](images/logstash_terminal.png)
+
+
+#### Kibana dashboard
+![alt text](images/kibana_ui.png)
+
+![alt text](images/kibana_dash.png)
+#### Elastic dashboard
+![alt text](images/elasticsearch_dash.png)
+
+![alt text](images/elastic_search_indices.png)
+

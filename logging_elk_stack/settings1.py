@@ -174,30 +174,39 @@ LOGGING = {
             'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
         }
   },
-    'handlers': {
+  'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'console'
+        },
         'logstash': {
-            'level': 'ERROR',
+            #'level': 'WARNING',
             'class': 'logstash.TCPLogstashHandler',
             'host': 'localhost',
-            'port': 5959,  # Default value: 5959
-            'version': 1,
-        # Version of logstash event schema. Default value: 0 (for backward compatibility of the library)
+            'port': 5959, # Default value: 5959
+            'version': 1, # Version of logstash event schema. Default value: 0 (for backward compatibility of the library)
             'message_type': 'django',  # 'type' field in logstash message. Default value: 'logstash'.
-            'fqdn': True,  # Fully qualified domain name. Default value: false.
-            'tags': ['django.request'],  # list of tags. Default: None.
+            'fqdn': False, # Fully qualified domain name. Default value: false.
+            'tags': ['django.request'], # list of tags. Default: None.
         },
-        'file': {
+     'file': {
                 'level': 'DEBUG',
                 'class': 'logging.FileHandler',
                 'formatter': 'file',
                 'filename': 'debug.log'
             }
-    },
-    'loggers': {
-        '': {
-            'handlers': ['logstash','file'],
-            'level': 'ERROR',
+  },
+  'loggers': {
+        'django.request': {
+            'level': 'WARNING',
+            'handlers': ['logstash'],
             'propagate': True,
-        }
+        },
+        # '': {
+        #     'level': 'DEBUG',
+        #     'handlers': ['console','file'],
+        #     'propagate': True,
+        # },
     }
 }
