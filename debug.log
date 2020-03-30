@@ -3,3 +3,5 @@
 2019-06-05 15:59:28,853 logging_app.views ERROR    error-inside sample views
 2019-06-05 15:59:52,555 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
 2019-06-05 16:00:14,394 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2019-06-05 16:08:41,439 django.utils.autoreload INFO     /home/csk/PycharmProjects/git/logging_elk_stack/logging_elk_stack/settings.py changed, reloading.
+2019-06-05 16:08:45,881 django.utils.autoreload INFO     Watching for file changes with StatReloader

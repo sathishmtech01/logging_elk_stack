@@ -45,7 +45,11 @@
         - similarly for other 
     
     Run :
+    
+    csk@csk-ai-revolution:~$ cd /home/csk/elk/kibana
     Kibana - csk@csk-ai-revolution:~/elk/kibana$ ./bin/kibana
+    
+    csk@csk-ai-revolution:~$ cd /home/csk/elk/elasticsearch
     Elastic search - csk@csk-ai-revolution:~/elk/elasticsearch$ ./bin/elasticsearch 
     logstacsh - 
     csk@csk-ai-revolution:~/elk/logstash$ nano logstash-simple.conf
@@ -82,8 +86,11 @@
 
 #### Kibana dashboard
 ![alt text](images/kibana_ui.png)
-
 ![alt text](images/kibana_dash.png)
+
+#### Kibana Vizualization
+![alt text](images/dashboard.png)
+
 #### Elastic dashboard
 ![alt text](images/elasticsearch_dash.png)
 
