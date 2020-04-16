@@ -91,6 +91,10 @@
 #### Kibana Vizualization
 ![alt text](images/dashboard.png)
 
+![alt text](images/geo_loc.png)
+
+
+
 #### Elastic dashboard
 ![alt text](images/elasticsearch_dash.png)
 
