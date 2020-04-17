@@ -130,7 +130,10 @@
 
 ![alt text](images/geo_loc.png)
 
+#### Grafana Vizualization
+![alt text](images/grafana_elastic_settings.png)
 
+![alt text](images/grafana_dashboard.png)
 
 #### Elastic dashboard
 ![alt text](images/elasticsearch_dash.png)
