@@ -1,0 +1,16 @@
+[Unit]
+Description=kibana service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=csk
+ExecStart=/home/csk/elk/kibana/bin/kibana 
+
+[Install]
+WantedBy=multi-user.target
+
+

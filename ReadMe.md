@@ -66,6 +66,18 @@
       }
     }
     
+    Alternate kibana & elastic service start
+    csk@csk-ai-revolution:~$ sudo service elastic start
+    csk@csk-ai-revolution:~$ sudo service kibana start
+    csk@csk-ai-revolution:~$ sudo service elastic status
+    csk@csk-ai-revolution:~$ sudo service kibana status
+    
+    
+    sudo service elastic start
+    sudo service kibana start
+    sudo service grafana-server start
+    
+    
     csk@csk-ai-revolution:~/elk/logstash$ ./bin/logstash -f logstash-simple.conf
     
     
