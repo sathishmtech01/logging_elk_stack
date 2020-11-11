@@ -1,0 +1,15 @@
+filebeat.inputs:
+  - type: log
+    paths:
+      - /var/log/sample2.log
+output:
+  console:
+    pretty: true
+---
+filebeat.inputs:
+  - type: log
+    paths:
+      - /var/log/sample1.log
+output:
+  console:
+    pretty: true

@@ -1,0 +1,174 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logstash-configmap
+  namespace: development
+  labels:
+    app: logstash
+    version: "1.0"
+    environment: logging
+data:
+  tls.crt: |-
+    -----BEGIN CERTIFICATE-----
+    MIID2zCCAsOgAwIBAgIRAPMASITkW4t7xyvYLdRSlOIwDQYJKoZIhvcNAQELBQAw
+    NTEWMBQGA1UECxMNZGV2LWVsay1ub2RlczEbMBkGA1UEAxMSZGV2LWVsay1ub2Rl
+    cy1odHRwMB4XDTIwMDUwNDEwMDYwN1oXDTIxMDUwNDEwMTYwN1owTTEWMBQGA1UE
+    CxMNZGV2LWVsay1ub2RlczEzMDEGA1UEAxMqZGV2LWVsay1ub2Rlcy1lcy1odHRw
+    LmRldmVsb3BtZW50LmVzLmxvY2FsMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+    CgKCAQEAk5VdVvyeO0azpQhKsaoygJ9XjlJxcx3OICXeBnP8JYT5nbARF0ZxePzs
+    CAEhFAwpl9rSklHZ6s6KWoxa/Kqb/77lblb6hJSfob3sMjCQTUvEREzq9y7kuO0C
+    npLk4Dkosl3wUS3XjumKsUIfv7rulvsXuFgsDPlKzU6tg5/0cmMXBhQHIy5L6D4F
+    BJ8qC07cdurDSc8iVz7jnW7PO9zg0O+lZyEdyLiRXt4F5G3TYKTiIjLMPz3lYpfj
+    QdhjSFi40AJjDG2CvPpekxjK2ZpovwD1UBYY+pvlLWyEXTkEaBWqKB/7qYs7Sl+1
+    xBfVc1LFqqhrXx1ZFejztF+cet4rMQIDAQABo4HNMIHKMA4GA1UdDwEB/wQEAwIF
+    oDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZgGA1UdEQSBkDCBjYIq
+    ZGV2LWVsay1ub2Rlcy1lcy1odHRwLmRldmVsb3BtZW50LmVzLmxvY2FsghVkZXYt
+    ZWxrLW5vZGVzLWVzLWh0dHCCJWRldi1lbGstbm9kZXMtZXMtaHR0cC5kZXZlbG9w
+    bWVudC5zdmOCIWRldi1lbGstbm9kZXMtZXMtaHR0cC5kZXZlbG9wbWVudDANBgkq
+    hkiG9w0BAQsFAAOCAQEAquISyZMiP1xn96FcIUYVklf690A2BTfhbS4sKRGspzU8
+    YNlnLTgoAcPGQHvgMZp7MrY6k24y+hJK/s9xXyCxSImlqtBcuat50/1/lCQ2ZkP+
+    NoAHm76ci2YIw2kFsnKiIqxt8bmYfRpJV7p5/DSyOoHF48i6PuFbzjkPwH/iy56x
+    yOyYuV/yAxOEO1VvlZquGyl0gQ06dZnWSIV1LhSUmj2hWSpaDd9ABpeEWFnFThlj
+    9vM8Zi1QQ5uk6K6IIHehebXKc+sJeJK4wtADWqpKQ2MyueGmVvq1h+xn3ZUwvJZp
+    GispEh9QQBq8DKMEhOQjWklIaehNGEU8WfmEkWGHxg==
+    -----END CERTIFICATE-----
+    -----BEGIN CERTIFICATE-----
+    MIIDNjCCAh6gAwIBAgIQHXWAKE0kUVqU+YezXzF4vjANBgkqhkiG9w0BAQsFADA1
+    MRYwFAYDVQQLEw1kZXYtZWxrLW5vZGVzMRswGQYDVQQDExJkZXYtZWxrLW5vZGVz
+    LWh0dHAwHhcNMjAwNTA0MTAwNjA3WhcNMjEwNTA0MTAxNjA3WjA1MRYwFAYDVQQL
+    Ew1kZXYtZWxrLW5vZGVzMRswGQYDVQQDExJkZXYtZWxrLW5vZGVzLWh0dHAwggEi
+    MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC/cnoM0szxM/JwvGgwRH3DxtPy
+    iIon+wpugyLF01KCBltiWl8ZIqN+q0dyjrKlNtm7Nwur5o77E8nawh422xM2ABZj
+    718A3/t4KLKx1SIE9yHqmRHEfCfrUAwObD+scLk//VlrMI8XkMGi/XhwKYjkOMDT
+    Dvn3FINuLTFCMR0WKe7Ai7Dz5FAlhjvlX8sJIg/Zs/v5coROufFZJ0sya9qEaXF9
+    KgXBfwGGuFxtyxk+sqJUL+05RNgYqeJvWt0aPvvbSOajOhAlSCmtEPbgdDbIhiwu
+    1UVRjq/4exvSwyms3e8x3+TLqDvA8XZawO6yBAnN/hXYpAYukNuf/1xBRKbvAgMB
+    AAGjQjBAMA4GA1UdDwEB/wQEAwIChDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYB
+    BQUHAwIwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAZ7153n3v
+    SOGIjK+rppuwCQS1V3ft+3IUKMetQjelybyH+qlWCSbbjGML44ifLdMaOuGCqWFE
+    6VB1JrZ9IzGNPoUv8IGltu9I8cyNOowoE/ELmBrg3R5NiCxicSd9lz4MpCLzFEzo
+    yh2fpHDewuRJ6+/1k0Lw7Q8M5t6P8zy5Jy6314/lj+ElQUUpGJruG7eJgl7x4/bQ
+    aTZGEvC652XwR1D8b+Rj87+gLM99rZAwwhf2CyqU/CCGCSO9MraWmZxQnxuqaG7B
+    6Dh8GwS5pG1DsBV+azvFFVc1Kpf8QCf2WTj3f64iM6xWukKzyFGadK3uL6vW1p/7
+    EMuL5Q4257lHSQ==
+    -----END CERTIFICATE-----
+
+  logstash.yml: |-
+    path.settings : /usr/share/logstash/config/
+    http.host: "0.0.0.0"
+    path.config: /usr/share/logstash/pipeline/
+    queue.type: persisted
+    queue.max_bytes: 4gb
+  pipeline.conf: |-
+    input {
+        beats {            
+            port => 5044
+            codec => "json"            
+            }
+        }
+    output {
+        elasticsearch {
+            hosts => ["https://dev-elk-nodes-es-http:9200"]
+            codec => "json"
+            index => "beats-elk-central-log"
+            user => "elastic"
+            password => "zXHZH86R4g51vFWi7228F2DG"
+            cacert => "/usr/share/logstash/certificate/tls.crt"
+            ssl => true            
+            ssl_certificate_verification => true
+            }
+        }
+  
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: logstash
+  namespace: development
+  labels:
+    app: logstash
+    version: "1.0"
+    environment: logging
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: logstash
+        version: "1.0"
+        environment: logging
+    spec:
+      containers:
+      - name: logstash-container
+        image: docker.elastic.co/logstash/logstash:7.6.2
+        env:
+          - name:  ELASTICSEARCH_HOST
+            value: "dev-elk-nodes-es-http"
+          - name:  ELASTICSEARCH_PORT
+            value: "9200"
+        ports:
+        - containerPort: 5044
+        volumeMounts:
+          - name: logstash-certificate-config-volume
+            mountPath: /usr/share/logstash/certificate
+          - name: logstash-settings-config-volume
+            mountPath: /usr/share/logstash/config
+          - name: logstash-pipeline-config-volume
+            mountPath: /usr/share/logstash/pipeline
+      volumes:
+      - name: logstash-certificate-config-volume
+        configMap:
+          name: logstash-configmap
+          items:
+            - key: tls.crt
+              path: tls.crt
+      - name: logstash-settings-config-volume
+        configMap:
+          name: logstash-configmap
+          items:
+            - key: logstash.yml
+              path: logstash.yml
+      - name: logstash-pipeline-config-volume
+        configMap:
+          name: logstash-configmap
+          items:
+            - key: pipeline.conf
+              path: pipeline.conf
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: logstash-service
+  namespace: development
+  labels:
+    app: logstash
+    version: "1.0"
+    environment: logging
+spec:
+  type: ClusterIP
+  selector:
+    app: logstash
+    version: "1.0"
+    environment: logging
+  ports:
+  - port: 5044
+    targetPort: 5044
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: logstash-lb-service
+  namespace: development
+  labels:
+    app: logstash
+    version: "1.0"
+    environment: logging
+spec:
+  type: LoadBalancer
+  selector:
+    app: logstash
+    version: "1.0"
+    environment: logging
+  ports:
+  - name: beats
+    port: 5044
