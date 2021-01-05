@@ -1,0 +1,12 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /home/csk/elk/logstash/sample.log
+output.kafka:
+  topic: tesy
+  hosts: ["xxx.windows.net:9093"]
+  username: "$ConnectionString"
+  password: "Endpoint=sb://xxx.windows.net/;SharedAccessKeyName=xxx;SharedAccessKey=xxx="
+  ssl.enabled: true
+  compression: none

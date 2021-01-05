@@ -1,0 +1,14 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/*.log
+output.kafka:
+  topic: topic_name
+  required_acks: 1
+  client_id: filebeat
+  version: '1.0.0'
+  hosts:
+    - "xxx.net:9093"
+  username: "Endpoint=sb://xxx.net/;SharedAccessKeyName=xxx;SharedAccessKey=xxxx="
+  password: "Endpoint=sb://xxx.net/;SharedAccessKeyName=xxx;SharedAccessKey=xxxx="

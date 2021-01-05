@@ -1,0 +1,12 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/*.log
+output.kafka:
+  hosts: ['broker:9094']
+  topic: topic_name
+  ssl.enabled: true
+  ssl.certificate_authorities: ['path trustore.pem']
+  ssl.certificate: ['path certificate.pem']
+  ssl.key: ['path private_key.pem']
