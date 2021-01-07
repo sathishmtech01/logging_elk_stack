@@ -5,3 +5,6 @@ root@csk-ai-revolution:/home/csk/filebeat-7.7.0-linux-x86_64# ./filebeat -e -c f
 
 
 Logs appear http://localhost:5601/app/kibana#/discover?_g=(refreshInterval:(pause:!t,value:0),time:(from:now-2h,to:now))&_a=(columns:!(_source),index:'29a78eb0-966d-11ea-a447-a3532861663f',interval:auto,query:(language:kuery,query:''),sort:!('@timestamp',desc))
+
+
+chmod go-w /home/csk/elk/filebeat_/filebeat-log-kafka.yaml

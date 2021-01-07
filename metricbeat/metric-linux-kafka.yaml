@@ -5,5 +5,5 @@ metricbeat.modules:
     period: 15s
     processes: ['.*']
 output.kafka:
-  topic: quickstart-events
+  topic: metricbeat
   hosts: ["localhost:9092"]

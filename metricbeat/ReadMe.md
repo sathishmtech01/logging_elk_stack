@@ -16,4 +16,6 @@ Execute Metric beat
             2021-01-07T19:58:25.137+0530	INFO	instance/beat.go:653	Beat ID: 8339cf7f-dd86-484b-a036-e3da0ae30135
 
 
-
+    
+    
+    chmod go-w /home/csk/elk/metricbeat/metric-linux-kafka.yaml

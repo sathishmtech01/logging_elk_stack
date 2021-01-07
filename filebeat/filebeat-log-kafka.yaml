@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /home/csk/elk/filebeat/log/*.log
+output.kafka:
+  topic: filebeat
+  hosts: ["localhost:9092"]

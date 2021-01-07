@@ -152,3 +152,26 @@
 
 ![alt text](images/elastic_search_indices.png)
 
+
+
+Services:
+
+Start services
+
+    service elastic start
+    service kibana start
+    service zookeeper start
+    service kafka start
+    service logstash start
+    service filebeat start
+    service metricbeat start
+
+Stop services
+    
+    service elastic stop
+    service kibana stop
+    service zookeeper stop
+    service kafka stop
+    service logstash stop
+    service filebeat stop
+    service metricbeat stop
