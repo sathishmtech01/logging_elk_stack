@@ -1,0 +1,14 @@
+[Unit]
+Description=elastic service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=csk
+ExecStart=/home/csk/elk/elasticsearch/bin/elasticsearch 
+
+[Install]
+WantedBy=multi-user.target

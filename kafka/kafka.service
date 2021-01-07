@@ -1,0 +1,18 @@
+[Unit]
+Description=kafka service
+After=network.target
+Requires=zookeeper.service
+After=zookeeper.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=csk
+WorkingDirectory=/home/csk/elk/kafka
+# Start the Kafka broker service
+ExecStart=/home/csk/elk/kafka/bin/kafka-server-start.sh /home/csk/elk/kafka/config/server.properties
+ExecStop=/home/csk/elk/kafka/bin/kafka-server-stop.sh
+
+[Install]
+WantedBy=multi-user.target

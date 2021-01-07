@@ -1,0 +1,17 @@
+[Unit]
+Description=logstash service
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=csk
+WorkingDirectory=/home/csk/elk/metricbeat
+# Start the ZooKeeper service
+# Note: Soon, ZooKeeper will no longer be required by Apache Kafka.
+ExecStart=/home/csk/elk/logstash_/bin/logstash -f /home/csk/elk/logstash_/logstash-kafka-es.conf
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+metricbeat.modules:
+  - module: system
+    metricsets: ["cpu","memory","network"]
+    enabled: true
+    period: 15s
+    processes: ['.*']
+output.kafka:
+  topic: quickstart-events
+  hosts: ["localhost:9092"]

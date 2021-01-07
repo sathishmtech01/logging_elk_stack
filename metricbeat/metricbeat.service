@@ -1,0 +1,17 @@
+[Unit]
+Description=metric beat service
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=csk
+WorkingDirectory=/home/csk/elk/metricbeat
+# Start the ZooKeeper service
+# Note: Soon, ZooKeeper will no longer be required by Apache Kafka.
+ExecStart=/home/csk/elk/metricbeat/metricbeat -e -c /home/csk/elk/metricbeat/metric-linux-kafka.yaml
+
+
+[Install]
+WantedBy=multi-user.target
