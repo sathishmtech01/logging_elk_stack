@@ -19,3 +19,21 @@ Execute Metric beat
     
     
     chmod go-w /home/csk/elk/metricbeat/metric-linux-kafka.yaml
+    
+    
+    ./metricbeat setup -E setup.kibana.host=localhost:5601 -E setup.kibana.username=elastic -E setup.kibana.password=elastic
+    
+Load metricbeats dashboard kibana
+
+    (base) csk@csk-ai-revolution:~/elk/metricbeat$ ./metricbeat setup -E setup.kibana.host=localhost:5601 -E setup.kibana.username=elastic -E setup.kibana.password=elastic
+    Overwriting ILM policy is disabled. Set `setup.ilm.overwrite: true` for enabling.
+    
+    Index setup finished.
+    Loading dashboards (Kibana must be running and reachable)
+    Loaded dashboards
+    
+    
+####Metric Beat Dashboard Kibana
+
+![alt text](../images/metricbeat.png)
+

@@ -1,9 +1,29 @@
 metricbeat.modules:
   - module: system
-    metricsets: ["cpu","memory","network"]
+    #metricsets: ["cpu","memory","network"]
+    metricsets:
+      - core
+      - cpu
+      - diskio
+      - entropy
+      - filesystem
+      - fsstat
+      - load
+      - memory
+      - network
+      - network_summary
+      - process
+      - process_summary
+      - raid
+      - service
+      - socket
+      - socket_summary
+      - uptime
+      - users
     enabled: true
     period: 15s
     processes: ['.*']
 output.kafka:
   topic: metricbeat
   hosts: ["localhost:9092"]
+
