@@ -175,3 +175,6 @@ Stop services
     service logstash stop
     service filebeat stop
     service metricbeat stop
+
+   
+    

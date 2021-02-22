@@ -21,12 +21,16 @@ Locally run kafka server run
         - service kafka start 
     
 #### Kafka Execution output (Producer - Consumer)
-
+    
+    Create topic
+    bin/kafka-topics.sh --create --zookeeper  "localhost:2181" --replication-factor 1 --partitions 2 --topic test-partition
+    
+    
     Producer
-    bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+    bin/kafka-console-producer.sh --topic test-partition --bootstrap-server localhost:9092
     
     Consumer
-    bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+    bin/kafka-console-consumer.sh --topic test-partition --from-beginning --bootstrap-server localhost:9092
     
 ![alt text](../images/kafka_producer_consumer.png)
 
