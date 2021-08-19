@@ -163,7 +163,7 @@ Start services
     service zookeeper start
     service kafka start
     service logstash start
-    service filebeat start
+    #service filebeat start
     service metricbeat start
 
 Stop services
